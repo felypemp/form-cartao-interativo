@@ -7,33 +7,71 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="lado_direito">
-            <div class="cartoes">
-                <div class="cartao_frente">
-                    <img src="./images/bg-card-front.png" alt="imagem da Frente do cartão">
-                    <div class="container_cartao">
-                        <img src="./images/card-logo.svg" alt="">
-                        <h1 id="numero">0000 0000 0000 0000</h1>
-                        <div class="info_cartao">
-                            <span id="nome">Felipe Matos Pereira</span>
-                            <span id="data">
-                                <span id="mes">00</span>
-                                    /
-                                <span id="ano">00</span>
-                            </span>
+    <main>
+        <div class="container">
+            <div class="lado_esquerdo">
+                <div class="cartoes">
+                    <div class="cartao_frente">
+                        <img src="./images/bg-card-front.png" alt="imagem da Frente do cartão">
+                        <div class="container_cartao">
+                            <img src="./images/card-logo.svg" alt="">
+                            <h1 id="numero">0000 0000 0000 0000</h1>
+                            <div class="info_cartao">
+                                <span id="nome">Felipe Matos Pereira</span>
+                                <span id="data">
+                                    <span id="mes">00</span>
+                                        /
+                                    <span id="ano">00</span>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="cartaoFundo">
-                    <img src="./images/bg-card-back.png" alt="Imagem do fundo do cartão">
-                    <span id="cvc">000</span>
+                    
+                    <div class="cartaoFundo">
+                        <img src="./images/bg-card-back.png" alt="Imagem do fundo do cartão">
+                        <span id="cvc">000</span>
+                    </div>
                 </div>
             </div>
 
+            <div class="lado_direito">
+                <form>
+                    <div class="grid_1">
+                        <label for="nome_cartao">Nome no cartão</label>
+                        <input type="text" placeholder="e. g. Jane Apleseed" id="nome_cartao" required>
+                    </div>
+                    <div class="grid_2">
+                        <label for="numero_cartao">Numero do cartão</label>
+                        <input type="number" placeholder="0000 0000 0000 0000" id="numero_cartao" required>
+                    </div>
+                    <div class="informacao_cartao">
+                        <div class="data_cartao">
+                            <label for="data_cartao">Data (MM/AA)</label>
+                            <div class="inp_dois">
+                                <div>
+                                    <input type="number" placeholder="MM" id="mes_cartao" required>
+                                </div>
+                                <div>
+                                    <input type="number" placeholder="AA" id="ano_cartao" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_4">
+                            <label for="cvc_cartao">CVC</label>
+                            <input type="number" placeholder="CVC" id="cvc_cartao" required>
+                        </div>
+                    </div>
+                    <button id="btn_enviar">confirmar</button>
+                </form>
+                <div class="agradecimento esconder">
+                    <img src="./images/icon-complete.svg" alt="Imagem de agracedimento">
+                    <h1>Obrigado!</h1>
+                    <p>We've added your card details</p>
+                    <button>Continue</button>
+                </div>
+            </div>
         </div>
-    </div>
-    
+    </main>
+
 </body>
 </html>
