@@ -24,5 +24,16 @@ body{
 }
 
 .container{
-  display:flex
+  display:flex;
+  align-items: center;
+}
+
+.lado_esquerdo{
+  min-height:100vh;
+  width: 40%;
+  background-image: url("../images/bg-main-desktop.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
